@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "thankunext"
+version = "0.0.1"
+authors = [
+  { name="cowsecurity", email="yashsinghchauhanformal@gmail.com" },
+]
+description = "Python implementation of thankunext tool"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["thankunext","nextjs urls"]
+
+[project.urls]
+Homepage = "https://github.com/cowsecurity/thankunext"
+Issues = "https://github.com/cowsecurity/thankunext/issues"
+
+[dependencies]
+requests = ">=2.26.0"
