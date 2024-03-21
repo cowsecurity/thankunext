@@ -1,13 +1,13 @@
 # ThankUNext
 
-ThankUNext is a Python tool for easily gathering all routes related to a Next.js application through parsing of _buildManifest.js.
+ThankUNext is a Python tool, based on the [thankunext](https://github.com/c3l3si4n/thankunext) tool created by [c3l3si4n](https://github.com/c3l3si4n), for easily gathering all routes related to a Next.js application through parsing of _buildManifest.js.
 
 ## Installation
 
 You can install ThankUNext via pip:
 
 ```bash
-pip3 install thankunext
+pip install thankunext
 ```
 
 ## Usage
@@ -47,4 +47,4 @@ If you find any bugs or have suggestions for improvements, please feel free to o
 
 ## License
 
-ThankUNext is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+ThankUNext is licensed under the [MIT License](LICENSE), originally developed by [c3l3si4n](https://github.com/c3l3si4n).
