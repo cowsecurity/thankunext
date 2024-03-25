@@ -1,26 +1,28 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[project]
+[tool.poetry]
 name = "thankunext"
-version = "0.0.1"
-authors = [
-  { name="cowsecurity", email="yashsinghchauhanformal@gmail.com" },
-]
+version = "0.0.3"
 description = "Python implementation of thankunext tool"
+authors = ["cowsecurity <yashsinghchauhanformal@gmail.com>"]
+license = "MIT"
 readme = "README.md"
-requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-keywords = ["thankunext","nextjs urls"]
+keywords = ["thankunext", "nextjs urls"]
 
-[project.urls]
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = ">=2.26.0"
+
+[tool.poetry.scripts]
+thankunext = "thankunext.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
 Homepage = "https://github.com/cowsecurity/thankunext"
 Issues = "https://github.com/cowsecurity/thankunext/issues"
-
-[dependencies]
-requests = ">=2.26.0"
